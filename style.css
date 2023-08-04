@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font1: 'Mulish', sans-serif;
+  --font2: 'Open Sans', sans-serif;
+  --cor1: #89C5CC;
+  --cor2: #7D7987;
+  --cor3: #1F1534;
+}
+
+body {
+  font-family: var(--font2);
+}
+
+.page {
+  width: 1000px;
+  margin: 65px auto 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 55px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 48px;
+  font-family: var(--font1);
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor3);
+}
+
+ul li a:hover {
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: var(--font1);
+  font-size: 49px;
+  line-height: 56px;
+  font-weight: normal;
+  width: 490px;
+  color: var(--cor2);
+}
+
+h1 span {
+  font-weight: bold;
+  color: var(--cor1);
+}
+
+section p {
+  font-size: 14px;
+  line-height: 28px;
+  color: var(--cor2);
+  margin: 40px 0;
+}
+
+button {
+  text-transform: uppercase;
+  font-family: var(--font2);
+  border-radius: 4px;
+  background: var(--primary-color, #69B99D);
+  display: flex;
+  height: 56px;
+  padding: 14px 32px 15px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+footer {
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+footer a {
+  font-weight: bold;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
