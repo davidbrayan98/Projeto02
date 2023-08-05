@@ -14,6 +14,7 @@
   --cor1: #89C5CC;
   --cor2: #7D7987;
   --cor3: #1F1534;
+  --cor4: #69B99D;
 }
 
 body {
@@ -58,8 +59,9 @@ main {
 h1 {
   font-family: var(--font1);
   font-size: 49px;
-  line-height: 56px;
   font-weight: normal;
+  line-height: 56px;
+
   width: 490px;
   color: var(--cor2);
 }
@@ -77,16 +79,25 @@ section p {
 }
 
 button {
+  color: white;
   text-transform: uppercase;
   font-family: var(--font2);
-  border-radius: 4px;
-  background: var(--primary-color, #69B99D);
-  display: flex;
-  height: 56px;
+
+  background: var(--cor4);
   padding: 14px 32px 15px 32px;
+  
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: black;
+  background: #518f7a;
 }
 
 footer {
